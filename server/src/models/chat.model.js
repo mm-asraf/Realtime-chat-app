@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+const { Schema, model } = "mongoose";
 
 const ChatSchema = new Schema(
   {
