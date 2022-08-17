@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useLoginUserMutation } from "../services/appApi";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loginUser, { isLoading, error }] = useLoginUserMutation();
 
+  const navigate = useNavigate();
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -16,6 +20,13 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    loginUser({ email, password }).then((res) => {
+      if (res) {
+        //socket works
+        // navigate to the chat
+        navigate("/chat");
+      }
+    });
   };
 
   return (
