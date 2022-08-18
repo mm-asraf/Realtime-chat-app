@@ -15,7 +15,7 @@ const Home = () => {
           <p>Chat App lets you connect with the world</p>
           <LinkContainer to="/chat">
             <Button varient="success">
-              Get Started{" "}
+              Get Started
               <i className="home-message-icon fas fa-comments home-message-icons"></i>
             </Button>
           </LinkContainer>

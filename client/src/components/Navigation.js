@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import logo from "../assets/logo.png";
 import { useLogoutUserMutation } from "../services/appApi";
+import "./Navigation.css";
 
 const Navigation = () => {
   const [logoutUser] = useLogoutUserMutation();
@@ -21,7 +22,7 @@ const Navigation = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="header_set" bg="light" expand="lg">
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>

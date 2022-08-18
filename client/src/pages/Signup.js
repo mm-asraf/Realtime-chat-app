@@ -83,13 +83,13 @@ const Signup = () => {
   };
 
   return (
-    <Container>
+    <Container className="container">
       <Row>
         <Col
           md={7}
           className="d-flex align-items-center justify-content-center flex-direction-column"
         >
-          <Form style={{ widht: "80%", maxWidth: 500 }} onSubmit={handleSignup}>
+          <Form className="sign_set" onSubmit={handleSignup}>
             <h1 className="text-center">Create Account</h1>
             <div className="signup-profile-pic__container">
               <img
@@ -138,7 +138,7 @@ const Signup = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button className="btnSign_set" variant="primary" type="submit">
               {uploadingImage ? "Signing You..." : "Signup"}
             </Button>
             <div className="py-4">
