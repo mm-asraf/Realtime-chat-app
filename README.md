@@ -1,7 +1,7 @@
 # Realtime-chat App
 
 [Visit Now ](https://chat-app-mm-asraf.vercel.app/) 🚀
-[Video Demo  ](https://drive.google.com/file/d/1MZTzqU1SEIgcS_Lh3GZUjoL_uNzQm_Fe/view?usp=sharing) 🚀
+<!-- [Video Demo  ]() 🚀 -->
 
 ## 🖥️ Tech Stack
 **Frontend:**
